@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Echoes of history</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="info signin">
+            <form id="loginform">
+                <h2>login</h2>
+                <div class="text">
+                    <input type="text" required>
+                    <label for="" class="user">Username</label>
+                </div>
+                <div class="text">                                       
+                    <input type="password" required>
+                    <label for="" class="pass">Passward</label>
+                </div>
+                <div class="remember">
+                    <input type="checkbox">
+                    <label for="" class="rem">Remember</label>                   
+                </div>
+                <button type="submit">Login</button>
+                <div class="sign_up">
+                    <p>Don't have an account? <a href="sigh-up.html" class="sign" >Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js">
+        document.getElementById("loginform").addEventListener("sumbit",loginuser);
+        function loginuser(e) {
+            e.preventDefult();
+            const Username= document.getElementsByClassName("user").value;
+            const password=document.getElementsByClassName("pass").value;
+            const storedUsername=localStorage.getItem("userUser");
+            const storedpassward=localStorage.getItem("UserPass")
+            if (Username==storedUsername && passward==storedpassward) {
+                redirectToHome();
+            }
+            else {
+                alert("Data not true")
+            }
+        } 
+
+        function redirectToHome(){
+            window.location.href="home.html"
+        }
+
+        document.getElementsByClassName("sign").addEventListener("click",function () {
+        window.location.href="sigh-up.html";
+    })
+    
+    document.getElementById("loginform").addEventListener("submit" )
+    </script>
+</body>
+</html>

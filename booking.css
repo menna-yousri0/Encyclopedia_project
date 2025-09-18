@@ -1,0 +1,85 @@
+.css{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px
+}
+
+ .booking-container h1{
+    color: white;
+    text-align: center;
+}
+
+ .booking-container h2{
+    color: white;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+.booking-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0, 0, 0.1);
+}
+hr {
+     border:0;
+     height: 1px;
+     background-color: #ddd;
+     margin:20px 0;
+}
+.form{
+    margin-bottom: 15px;
+}
+label {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+input {
+    width:100%;
+    padding:8px;
+    border:1px solid #ddd;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    background-color:#01022d;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #2980b9;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 100vh;*/
+    background-color: rgb(4, 4, 50);
+    background-image: 
+    linear-gradient(to right ,#01022d89 50%,#00000065),
+    url("photos/Flux_Dev_generate_image_for_all_fEpic_wideangle_fantasy_landsc_1.jpg");
+    background-size: cover;
+}
+.booking-container {
+    position: relative;
+    width: 400px;
+    height: auto;
+    background-color: rgb(4, 4, 50);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 50px gray;
+    
+}
+.form input{
+    color:white;
+    font-size: 16px;
+  
+}

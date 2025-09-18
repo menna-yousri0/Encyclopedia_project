@@ -1,0 +1,214 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+
+}
+body{
+    background-image:linear-gradient( to right ,#01022d,#000000);
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+.cont{
+    background-image: 
+    linear-gradient(to right ,#01022d89 50%,#00000065),
+    url("photos/Flux_Dev_generate_image_for_all_fEpic_wideangle_fantasy_landsc_1.jpg");
+    width :100%;
+    height:100vh;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size:cover;
+    
+
+   
+}
+   
+.cont:hover{
+    background-image: 
+    linear-gradient(to right , transparent,#00000089 ),
+    url("photos/Flux_Dev_generate_image_for_all_fEpic_wideangle_fantasy_landsc_1.jpg");
+}
+ 
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+  
+}
+
+.nav-logo{
+    font-size: 30px;
+    text-transform:uppercase;
+    padding: 50px 20px;
+
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    justify-content:space-evenly;
+    width:60%;
+}
+
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+.content{
+    width:30%;
+    padding:300px 50px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+.pragraph{
+    padding-top: 60px;
+    font-size: 20px;
+}
+h2{
+  
+    font-size:30px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    background: linear-gradient(135deg, #01022d, #000000);
+    
+    color: white;
+    
+    border-radius: 30px;
+  
+ 
+   
+  }
+
+  .tour-card {
+   /* background: linear-gradient(135deg, #01022d, #000000);*/
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #4a5054;
+  }
+
+  .tour-card.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .tour-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.7);
+  }
+
+  .tour-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #ccc;
+  }
+
+  .tour-card .content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .tour-card h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 22px;
+  }
+
+  .tour-card p {
+    margin: 0 0 15px;
+    color: #d1d1d1;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .tour-card .btn {
+    /*background: linear-gradient(to right, #01022d, #000000);*/
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .tour-card .btn:hover {
+    background: #01022d;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  .footer {
+    background-color: rgba(1, 2, 45, 0.54); /* Your color with transparency */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .content {
+    opacity: 0;
+    animation: content 2s ease-in forwards;
+  }
+  @keyframes content  {
+   to{
+    opacity: 1;
+   }
+    
+  }
+  body {
+    background-color: #000000;
+    opacity: 0;
+    animation: body 0.5s ease-in forwards;
+  }
+  @keyframes body  {
+   to{
+    opacity: 1;
+   }
+    
+  }
+

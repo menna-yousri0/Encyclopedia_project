@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    /*background-image: url(https://i.fbcd.co/products/resized/resized-750-500/2c1dc09b487bde1fe9272411a48bbf00e1c00b96dbf7381e45bddffd5dadfbef.jpg);*/
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  /*  background-color: #222;*/
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 50px gray;
+    
+}
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s ease-in-out;
+}
+.info.active .info.signin{
+    transform: translateY(-450PX);
+}
+h2 {
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+.text {
+    position:  relative;
+    margin: 30px;
+    border-bottom: 2px solid white;
+}
+.text label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size:16px;
+    color: white;
+    transition: 0.5s;
+}
+.text input {
+    width:320px;
+    height:40px;
+    background: transparent;
+    color:white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+} 
+.text input:focus~label,
+.text input:valid~label {
+    top:-5px;
+}
+.remember {
+    margin: -5px 0 20px 30px;
+}
+.remember label {
+    color:white;
+    font-size:16px ;
+}
+ button {
+    position: relative;
+    width:100%;
+    height: 40px;
+    background-color: aqua;
+    box-shadow: 0 0 10px black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ .sign_up {
+       font-size: 14px;
+       text-align: center;
+       margin-top: 20px;
+ }
+ .sign_up p {
+         color: white;
+ }
+ .sign_up p a {
+            color: aqua;
+            text-decoration: none;
+            font-weight: 600;
+ }
+    .sign_up p a:hover{
+         text-decoration:underline; 
+    }
+ 

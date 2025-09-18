@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Echoes of history</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info signup">
+             <form id="signinform">
+                 <h2>sign up</h2>
+                 <div class="text">
+                     <input type="text" required>
+                     <label for="us" class="user">Username</label>                  
+                 </div>
+                 <div class="text">
+                     <input type="text" required>
+                     <label for="" class="mail">email</label>
+                 </div>
+                 <div class="text">
+                     <input type="password" required>
+                     <label for="" class="pass">password</label>                 
+                 </div>
+                 <div class="remember">
+                     <input type="checkbox">
+                     <label for="">I agree to the term & conditions</label>
+                 </div>
+                <button type="submit">sign up</button> 
+                <div class="sign_up">
+                    <p>Already have an account <a href="index.html" class="sign">sign in</a></p>
+                </div>
+             </form>
+        </div>
+  </div>
+  <script src="traces.js">
+     document.getElementById("signinform").addEventListener("submit",registeruser);
+        function registeruser(e) {
+            e.preventDefault();
+            const username= document.getElementsByClassName("user").value;
+            const email=document.getElementsByClassName("mail").value;
+            const passward=document.getElementsByClassName("pass").value;
+            if(username && email && passward){
+                localStorage.setItem("userName",username)
+                localStorage.setItem("Email",email)
+                localStorage.setItem("Passward",passward)
+                redirectToHome();
+            }
+            else {
+                alert("Data not completley filled")
+            }
+        }
+     function redirectToHome(){
+        window.location.href="home.html"
+     }
+     
+
+    document.getElementsByClassName("sign").addEventListener("click",function() {
+    window.location.href="index.html" ;}
+)
+  </script>
+
+</body>

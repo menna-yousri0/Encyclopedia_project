@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title> Echoes of history</title>
+ <link rel ="stylesheet"href="styles.css">  
+ <link rel ="stylesheet"href="css/ltr.css">
+ <script src="anmiation.js"></script>
+</head>
+
+
+<body>
+
+<div class="cont">
+<header>
+    <a href='#' class="nav-logo"> Echoes of history  </a>
+  <ul>
+   <!--<li> <a href="index">Home</a></li>-->
+    <li> <a href="Untitled-1.html">Popular</a></li>
+    <li><a href="login.html"> log in</a></li>   
+    <li><a href="booking.html"> Booking</a></li>  
+    <li><a href="about.html/4_5836824705171986514.html"> About us</a></li>  
+    <li><a href="signout.html"> Sign Out</a></li>  
+  </ul>
+</header>
+<div class="content">
+    <h2>Echoes of history</h2>
+    <p class="pragraph">This platform unveils the silent whispers of ancient civilizations through their monumental remains. These awe-inspiring structures, carved by time and human hands, stand as eternal symbols of cultural brilliance. Wander through virtual corridors of history where every stone tells an unfinished story of power, faith, and innovation. From towering architectural marvels to intricate artistic masterpieces, each relic bridges our present to forgotten worlds. Here, dust-covered legends await to share their timeless secrets with curious minds."
+    </p>  
+</div>
+
+<div class="cards-container">
+
+<!-- Africa -->
+<div class="tour-card">
+  <img src="photos/7b126e8c-c1a4-4fab-8afb-ce824ab3dbbc.jpg" alt="Africa">
+  <div class="content">
+    <h3>Africa</h3>
+    <p>Discover the breathtaking wildlife and ancient wonders across Africa's vast lands.</p>
+    <a href="mariam.abd/choose.html" class="btn">Explore More</a>
+  </div>
+</div>
+
+<!-- Asia -->
+<div class="tour-card">
+  <img src="photos/yu-kato-cddaZDt6uRw-unsplash.jpg" alt="Asia">
+  <div class="content">
+    <h3>Asia</h3>
+    <p>The largest continent filled with diverse cultures, traditions, and landscapes.</p>
+    <a href="project IT/face page.html"class="btn">Explore More</a>
+  </div>
+</div>
+
+<!-- Europe -->
+<div class="tour-card">
+  <img src="photos/roman-kraft-g_gwdpsCVAY-unsplash.jpg" alt="Europe">
+  <div class="content">
+    <h3>Europe</h3>
+    <p>Experience the rich history, stunning architecture, and vibrant cities of Europe.</p>
+    <a href="myproject/europe.html" class="btn">Explore More</a>
+  </div>
+</div>
+
+<!-- North America -->
+<div class="tour-card">
+  <img src="photos/saksham-gangwar-3arzjiCyyFs-unsplash.jpg" alt="North America">
+  <div class="content">
+    <h3>North America</h3>
+    <p>From towering skyscrapers to breathtaking national parks, explore it all.</p>
+    <a href="project mero IT/first page.html" class="btn">Explore More</a>
+  </div>
+</div>
+<!-- South America -->
+<div class="tour-card">
+  <img src="photos/mckayla-crump-hjanvZlqoB8-unsplash.jpg" alt="South America">
+  <div class="content">
+    <h3>South America</h3>
+    <p>Vibrant cultures, lush rainforests, and unforgettable adventures await you.</p>
+    <a href="front-end/SouthAmerica.html" class="btn">Explore More</a>
+  </div>
+</div>
+
+<!-- Australia -->
+<div class="tour-card">
+  <img src="photos/sam-ladley-9ikhVviqgo0-unsplash.jpg" alt="Australia">
+  <div class="content">
+    <h3>Australia</h3>
+    <p>Home to incredible beaches, unique wildlife, and awe-inspiring landscapes.</p>
+    <a href="font-end.shahd/link.html" class="btn">Explore More</a>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+
+const cards = document.querySelectorAll('.tour-card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+cards.forEach(card => {
+  observer.observe(card);
+});
+</script>
+
+<footer class="footer">
+  <p>Echoes of history | explore the greatest civilizations</p>
+  <p>© 2025 All rights reserved</p>
+</footer>
+</body>
+</html>
+  
+ 
+
+  

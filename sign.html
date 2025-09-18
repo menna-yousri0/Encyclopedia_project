@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of History - Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info signup">
+             <form id="signinform" validate  method="post">
+                 <h2>Sign Up</h2>
+
+                 <div class="text">
+                     <input type="text" id="username" required name="username">
+                     <label for="username" class="user">First Name</label>
+                 </div>
+
+                 <div class="text">                      
+                     <input type="text" id="lastName" required>
+                     <label for="lastName" class="user">Last Name</label>                  
+                 </div>
+
+                 <div class="text">                      
+                     <input type="text" id="phone" maxlength="11" pattern="\d{11}" required>
+                     <label for="phone" class="user">Phone Number (11 digits)</label>                  
+                 </div>
+
+                 <div class="text">
+                     <input type="email" id="email" required >
+                     <label for="email" class="mail">Email</label>
+                 </div>
+
+                 <div class="text">
+                     <input type="password" id="password" minlength="6" required name="password">
+                     <label for="password" class="pass">Password (min 6 characters)</label>                 
+                 </div>
+
+                 <div class="remember">
+                     <input type="checkbox" id="terms" required>
+                     <label for="terms">I agree to the terms & conditions</label>
+                 </div>
+
+                 <button type="submit">Sign Up</button> 
+
+                 <div class="sign_up">
+                    <p>Already have an account? <a href="login.html" class="sign">Log in</a></p>
+                </div>
+             </form>
+        </div>
+    </div>
+
+   <script>
+        document.getElementById("signinform").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+           
+            localStorage.setItem("userUsername", username);
+            localStorage.setItem("userLastName", lastName);
+            localStorage.setItem("userPhone", phone);
+            localStorage.setItem("userEmail", email);
+            localStorage.setItem("userPassword", password);
+
+            alert("Account created successfully!");
+            
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+</html>

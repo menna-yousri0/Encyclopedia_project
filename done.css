@@ -1,0 +1,33 @@
+body{
+text-align: center;
+padding-top: 100px;
+background-image: 
+linear-gradient(to right ,#01022d89 50%,#00000065),
+url("photos/Flux_Dev_generate_image_for_all_fEpic_wideangle_fantasy_landsc_1.jpg");
+background-size: cover;
+}
+.message-box{
+background-color: rgb(4, 8, 55);
+color: #ffffff;
+border: 1px solid #c3e6cb;
+padding: 100px;
+margin: auto;
+width: 50%;
+border-radius: 15px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.buttons button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .yes {
+    background-color: #6de73c;
+  }
+  

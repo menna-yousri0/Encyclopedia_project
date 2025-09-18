@@ -1,0 +1,156 @@
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.country_discrip{
+    font-size: 25px;
+    font-weight: bold;
+}
+.America{
+    width: 100%;
+}
+.America_card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    overflow: hidden;
+    box-shadow:0.3s ease;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: aliceblue;
+    border: 1px solid rgb(248, 245, 245);
+    border-radius: 40px;
+    padding: 5px;
+    max-width: 1600px;
+    margin:25px auto;
+    background-color: rgb(44, 44, 46);
+}
+.America_card img{
+    width: 300px;
+    height: 300px;
+    margin-top: -15px;
+    margin-left: 3px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px black;
+    box-shadow: 0.3 ease;
+    transition: transform 0.3s ease;
+    margin: 20px;
+    display: block;
+}
+.description{
+    flex: 1;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    font-size: 25px;
+    font-style:italic;
+    word-spacing: 5px;
+}
+body{
+    background-image:linear-gradient(to right,#040530,#000000);
+}
+h2{color: aliceblue;
+    
+}
+.country_discrip{
+    color: aliceblue;
+}
+
+.continent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 40px;
+    margin-top: 100px;
+    text-align: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin-left: 300px;
+    border-radius: 30px;
+}
+@media(max-width:900px){
+    .continent{
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media(max-width:600px){
+    .continent{
+        grid-template-columns: repeat(1,1fr);
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.dif{
+    color: azure;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+P{
+    color: rgb(240, 251, 255);
+    font-style: oblique;
+}
+.continent_country{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow:4px 4px 4px 4px rgb(42, 42, 186);
+    background-color: rgb(65, 65, 73);
+    height: 400px;
+}
+.continent_country:hover{
+    transform: scale(1.05);
+}
+a{
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    background-color: #01022d;
+}
+.continent_country img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+@media (max-width: 900px) {
+
+    .America_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .America_card img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .America_card div {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+
+
+

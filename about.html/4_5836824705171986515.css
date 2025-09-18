@@ -1,0 +1,95 @@
+body{
+    
+    font-family:sans-serif;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right ,#01022d89 50%,#00000065), url("WhatsApp Image 2025-05-10 at 4.45.45 PM.jpeg") ;
+  color: oldlace;
+  margin: 0;
+  padding: 0;
+
+  
+
+}
+h1{
+   
+    text-align: center;
+    color: oldlacek;
+    margin-bottom: 50px;
+}
+h2{
+  margin-top: 30px;
+  
+
+
+}
+.all{
+  background:transparent;
+  max-width: 1000px;
+  font-style: italic;
+ margin: 50px auto;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ text-align: center;
+
+} 
+p{
+    margin: 10px;
+    font-size: 20px;
+    line-height:1.5 ;
+
+}
+ul{
+  margin: 10px;
+  padding-left: 20px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.des{
+  margin: 40px;
+  border: #0d0d6a solid 1px;
+  width: 500px;
+  border-radius: 90px;
+  box-shadow: 0 0 90px  #0a0a31;
+  background-color: rgba(0, 0, 0, 0.5)
+
+
+}
+.first{
+  max-width: 900px;
+  border: #0d0d6a  3px;
+  padding: 5px 100px;
+  margin:  auto;
+  text-align: center;
+}
+.des:hover{
+  box-shadow: 0 0 500px  #3a3ae3;
+  border: #0d0d6a solid 3px;
+  transform: scale(1.03);
+}
+footer {
+   background-color: rgba(0, 0, 0, 0.5);   
+  color: rgb(252, 248, 248);                
+  text-align: center;          
+  padding: 20px 0;             
+}
+
+.contact h2 {
+  margin-bottom: 15px;         
+  font-size: 24px;
+}
+
+.contact p {
+  margin: 8px 0;               
+  font-size: 16px;
+}
+
+.contact a {
+  color: #00c3ff;              
+  text-decoration: none; }      
+
+.contact a:hover {
+  text-decoration: underline; }
+
+

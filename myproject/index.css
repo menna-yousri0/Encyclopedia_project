@@ -1,0 +1,81 @@
+.cards{
+    display:flex;
+    align-items: center;
+    margin: 25px auto;
+    height: 100%;
+    border:1px solid rgb(248,245,245);
+    padding:5px;
+    border-radius: 40px;
+    color:aliceblue;
+    gap:20px;
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 1600px;
+    background: rgb(44, 44, 46);
+}
+.cards img{
+    width:300px;
+    height:300px;
+    border-radius: 20px;
+    margin-top: -15px;
+    margin-left: 3px;
+    margin: 20px;
+    box-shadow: 0 4px 8px black;
+    display: block;
+
+}
+.cards:hover{
+    transform: scale(1.01);
+}
+h2{
+    color:aliceblue;
+}
+.description{
+    flex:1px;
+    width:auto;
+    height: auto;
+    overflow: hidden;
+    font-size: 25px;
+    word-spacing: 5px;
+
+}
+
+body{
+    background: #01022d;
+    margin:0;
+    padding:0;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+.europe_photos{
+    width:100%;
+}
+.container{
+    font-size:25px ;
+    font-weight: bold;
+    color: aliceblue;
+   padding: 10px;
+
+}
+
+@media (max-width: 900px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards div {
+        text-align: center;
+        max-width: 100%;
+    }
+}

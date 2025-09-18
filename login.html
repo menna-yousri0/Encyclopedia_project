@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of History</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="info signin">
+            <form id="loginform"  method="post">
+                <h2>Login</h2>
+                <div class="text">
+                    <input type="text" id="username" required name="username">
+                    <label for="username" class="user">Username</label>
+                </div>
+                <div class="text">                                       
+                    <input type="password" id="password" required  minlength="6" name="password">
+                    <label for="password" class="pass">Password (min 6 digits)</label>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember" class="rem">Remember</label>                   
+                </div>
+                <button type="submit">Login</button>
+                <button type="reset">Reset</button>
+                <div class="sign_up">
+                    <p>Don't have an account? <a href="sign.html" class="sign">Make New Account</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("loginform").addEventListener("submit", loginUser);
+
+        function loginUser(e) {
+            e.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            const storedUsername = localStorage.getItem("userUsername");
+            const storedPassword = localStorage.getItem("UserPassword");
+
+            if (username === storedUsername && password === storedPassword) {
+                redirectToHome();
+            } else {
+                alert("Incorrect username or password");
+            }
+        }
+
+        function redirectToHome() {
+            window.location.href = "home.html";
+        }
+
+        document.querySelector(".sign").addEventListener("click", function () {
+            window.location.href = "sign.html";
+        });
+    </script>
+</body>
+</html>
+

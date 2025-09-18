@@ -1,0 +1,172 @@
+  h2 {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      width: 350px;
+      margin: auto;
+      color: white;
+  }
+
+  /* h1:hover {
+      color: brown;
+      text-decoration: underline;
+      cursor: pointer;
+  }
+
+  .UEROPE_container {
+      width: 100%;
+  }
+
+  .UEROPE_disc {
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  .Greece,
+  .England,
+  .Germany {
+      display: flex;
+      margin-top: 15px;
+      gap: 20px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+
+  .Greece img,
+  .England img,
+  .Germany img {
+      width: 350px;
+      height: 300px;
+      margin-top: -20px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+  }
+
+
+  .description {
+      flex: 1;
+      width: 350px;
+      height: 330px;
+      overflow: auto;
+  }
+
+  body {
+      background: linear-gradient(to right, #f7f0e8);
+      padding: 0;
+      color: #333;
+  }
+
+  .country {
+      font-weight: bold;
+      font-size: 18px;
+
+  } */
+
+
+
+
+
+  .Greece,
+  .England,
+  .Germany {
+      display: flex;
+      border: 1px solid rgb(248, 245, 245);
+      padding: 5px;
+      border-radius: 40px;
+      color: aliceblue;
+      margin: 25px auto;
+      gap: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      max-width: 1600px;
+      align-items: center;
+      height: 100%;
+      background-color: rgb(44, 44, 46);
+  }
+
+  .Greece img,
+  .England img,
+  .Germany img {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      margin-top: -15px;
+      margin-left: 3px;
+      margin: 20px;
+      box-shadow: 0 4px 8px black;
+      display: block;
+
+  }
+
+  .Greece,
+  .England,
+  .Germany:hover {
+      transform: scale(1.01);
+  }
+
+
+  p {
+      flex: 1px;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      font-size: 25px;
+      word-spacing: 5px;
+      padding: 10px;
+      color: white;
+
+  }
+
+  body {
+      background: #1e1e3f;
+      margin: 0;
+      padding: 0;
+  }
+
+
+
+
+  h3 {
+      color: aliceblue;
+      display: block;
+      margin-bottom: 15px;
+
+
+  }
+
+
+  .UEROPE_container {
+      width: 100%;
+  }
+
+
+
+
+  @media (max-width: 900px) {
+
+      .Greece,
+      .England,
+      .Germany {
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .Greece img,
+      .England img,
+      .Germany img {
+          width: 100%;
+          height: auto;
+      }
+
+
+
+      .Germany div,
+      .England div,
+      .Greece div {
+          text-align: center;
+          max-width: 100%;
+      }
+  }
